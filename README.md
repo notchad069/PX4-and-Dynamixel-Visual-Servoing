@@ -216,4 +216,3 @@ The `fly` package is the core ROS 2 flight-control, perception, and autonomous m
 - **`pid.py` (`pid_node`)**
   * **Purpose:** Low-level `50 Hz` vertical-axis PID controller regulating altitude directly via PX4 thrust setpoints[cite: 30].
   * **Details:** Enables `thrust_and_torque` in `OffboardControlMode`, waits for `/fmu/out/vehicle_local_position` telemetry before engaging Offboard mode (`1.0 s`) and arming (`2.0 s`), and computes vertical thrust commands (`kp = 0.8`, `ki = 0.05`, `kd = 0.1`, clamped to `[0.0, 1.0]`) published to `/fmu/in/vehicle_thrust_setpoint` to track a `-5.0 m` NED target altitude[cite: 30].
-  * 
