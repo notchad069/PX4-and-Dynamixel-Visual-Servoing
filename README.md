@@ -1,4 +1,4 @@
-# Aerial Robotics Sim ROS2
+# PX4 & Dynamixel Visual Servoing
 
 An end-to-end **ROS 2**, **PX4 Autopilot**, and **Gazebo** simulation workspace (`drone_ws`) built for developing, testing, and validating autonomous quadrotor perception, state estimation, and offboard flight control pipelines[cite: 33].
 
